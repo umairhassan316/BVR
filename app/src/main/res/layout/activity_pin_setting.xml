@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/bg_color"
+    android:orientation="vertical"
+    tools:context=".app_ui.activity.applock.PinSettingActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp">
+
+        <FrameLayout
+            android:visibility="gone"
+            android:id="@+id/banner_container"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/banner_height"
+            android:background="@color/light_blue_200">
+
+            <TextView
+                android:id="@+id/loading_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"
+                android:gravity="center"
+                android:text="@string/ad_loading" />
+
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:id="@+id/shimmer_view_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:background="@drawable/round_corner_banner_shimmer_bg" />
+        </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/text_view_appearance_title"
+            style="@style/SettingsGroupTitleTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/default_margin"
+            android:layout_marginTop="@dimen/default_margin"
+            android:layout_marginBottom="@dimen/default_margin_small"
+            android:text="App Lock Setting" />
+
+        <com.dt.auto.background.video.recorder.app_ui.activity.settings.setting_custom_views.SettingsButton
+            android:id="@+id/show_preview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:hint="Enabled"
+            app:isSwitchVisible="true"
+            android:visibility="visible"
+            app:text="App Lock" />
+
+        <View style="@style/DelimiterStyle"
+            android:visibility="visible"
+            />
+
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

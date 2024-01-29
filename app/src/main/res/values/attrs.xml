@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="text" format="string" />
+    <attr name="hint" format="string" />
+    <attr name="isArrowVisible" format="boolean" />
+    <attr name="isDelimiterVisible" format="boolean" />
+    <attr name="icon" format="reference" />
+    <attr name="iconBackground" format="color" />
+
+    <declare-styleable name="IconButton">
+        <attr name="icon" />
+        <attr name="iconBackground" />
+        <attr name="text" />
+    </declare-styleable>
+
+    <declare-styleable name="IconButtonWithDelimiter">
+        <attr name="icon" />
+        <attr name="iconBackground" />
+        <attr name="text" />
+        <attr name="isDelimiterVisible" />
+        <attr name="isArrowVisible" />
+    </declare-styleable>
+
+    <declare-styleable name="SettingsButton">
+        <attr name="text" />
+        <attr name="hint" />
+        <attr name="isSwitchVisible" format="boolean" />
+    </declare-styleable>
+
+
+    <declare-styleable name="SettingsRadioButton">
+        <attr name="text" />
+        <attr name="isDelimiterVisible" />
+    </declare-styleable>
+
+
+
+    <declare-styleable name="PinLockView">
+        <attr name="pinLength" format="integer" />
+        <attr name="keypadTextColor" format="color" />
+        <attr name="keypadTextSize" format="dimension" />
+        <attr name="keypadButtonSize" format="dimension" />
+        <attr name="keypadVerticalSpacing" format="dimension" />
+        <attr name="keypadHorizontalSpacing" format="dimension" />
+        <attr name="keypadButtonBackgroundDrawable" format="integer" />
+        <attr name="keypadDeleteButtonDrawable" format="integer" />
+        <attr name="keypadDeleteButtonSize" format="dimension" />
+        <attr name="keypadShowDeleteButton" format="boolean" />
+        <attr name="keypadDeleteButtonPressedColor" format="color" />
+
+        <attr name="dotEmptyBackground" format="reference" />
+        <attr name="dotFilledBackground" format="reference" />
+        <attr name="dotDiameter" format="dimension" />
+        <attr name="dotSpacing" format="dimension" />
+        <attr name="indicatorType" format="enum">
+            <enum name="fixed" value="0" />
+            <enum name="fill" value="1" />
+            <enum name="fillWithAnimation" value="2" />
+        </attr>
+
+    </declare-styleable>
+
+</resources>

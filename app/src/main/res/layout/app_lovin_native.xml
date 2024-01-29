@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/icon_image_view"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_margin="4dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="6dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/advertiser_textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/title_text_view"
+        app:layout_constraintTop_toTopOf="@+id/icon_image_view" />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/round_corner_bg"
+        android:padding="2dp"
+        android:text="Ad"
+        app:layout_constraintLeft_toRightOf="@id/icon_image_view"
+        app:layout_constraintTop_toTopOf="@id/icon_image_view"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/title_text_view"
+        app:layout_constraintStart_toEndOf="@+id/icon_image_view"
+     />
+
+    <TextView
+        android:id="@+id/title_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:translationY="-4dp"
+        app:layout_constraintBottom_toBottomOf="@id/textView"
+        android:layout_marginStart="8dp"
+        app:layout_constraintLeft_toRightOf="@id/textView"
+        tools:text="@tools:sample/cities" />
+
+    <TextView
+        android:id="@+id/advertiser_textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@id/textView"
+        app:layout_constraintTop_toBottomOf="@id/textView"
+        tools:text="@tools:sample/full_names" />
+
+
+    <FrameLayout
+        android:id="@+id/media_view_container"
+        android:layout_width="0dp"
+        android:layout_height="130dp"
+        android:layout_margin="6dp"
+        app:layout_constraintTop_toBottomOf="@id/advertiser_textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <TextView
+        android:id="@+id/body_text_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@id/media_view_container"
+        android:layout_margin="6dp"
+        app:layout_constraintEnd_toStartOf="@id/cta_button"
+        app:layout_constraintStart_toStartOf="@id/media_view_container"/>
+
+
+    <Button
+        android:id="@+id/cta_button"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/rounded_button_blue_bg"
+        android:textColor="@color/white"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/body_text_view"
+        app:layout_constraintStart_toEndOf="@id/body_text_view"
+        app:layout_constraintTop_toTopOf="@+id/body_text_view" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

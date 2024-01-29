@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/bg_color"
+    android:orientation="vertical"
+    tools:context=".app_ui.activity.settings.ui.SettingsActivity">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scroll_view"
+        style="@style/ScrollStyle">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp">
+
+            <FrameLayout
+                android:visibility="gone"
+                android:id="@+id/native_container_holder"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/native_height"
+                android:layout_margin="4dp"
+                android:background="@drawable/round_corner_bg"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <FrameLayout
+                    android:id="@+id/native_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="3dp" />
+
+                <TextView
+                    android:id="@+id/loading_tv"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/transparent"
+                    android:gravity="center"
+                    android:text="@string/ad_loading"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <com.facebook.shimmer.ShimmerFrameLayout
+                    android:id="@+id/shimmer_view_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="4dp"
+                    android:background="@drawable/round_corner_shimmer_bg" />
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/text_view_appearance_title"
+                style="@style/SettingsGroupTitleTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/default_margin"
+                android:layout_marginTop="@dimen/default_margin"
+                android:layout_marginBottom="@dimen/default_margin_small"
+                android:text="@string/video_recording_settings" />
+
+            <com.dt.auto.background.video.recorder.app_ui.activity.settings.setting_custom_views.SettingsButton
+                android:id="@+id/show_preview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hint="Enabled"
+                app:isSwitchVisible="true"
+                android:visibility="visible"
+                app:text="@string/preview_show_hide" />
+
+            <View style="@style/DelimiterStyle"
+                android:visibility="visible"
+                />
+
+            <com.dt.auto.background.video.recorder.app_ui.activity.settings.setting_custom_views.SettingsButton
+                android:id="@+id/select_camera_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hint="@string/back_camera"
+                app:isSwitchVisible="false"
+                app:text="@string/video_camera" />
+
+            <View style="@style/DelimiterStyle" />
+
+            <com.dt.auto.background.video.recorder.app_ui.activity.settings.setting_custom_views.SettingsButton
+                android:id="@+id/video_quality_selection_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hint="@string/resolutions_description"
+                app:isSwitchVisible="false"
+                app:text="@string/video_quality_selection" />
+
+            <View style="@style/DelimiterStyle" />
+            <com.dt.auto.background.video.recorder.app_ui.activity.settings.setting_custom_views.SettingsButton
+                android:id="@+id/fps_btn"
+                android:layout_width="match_parent"
+                android:alpha="0.8"
+                android:layout_height="wrap_content"
+                app:isSwitchVisible="false"
+                app:hint="Coming Soon"
+                android:visibility="gone"
+                app:text="Select Frames (Fps)" />
+
+            <View style="@style/DelimiterStyle"
+                android:visibility="gone"
+                />
+            <com.dt.auto.background.video.recorder.app_ui.activity.settings.setting_custom_views.SettingsButton
+                android:id="@+id/automatic_recording_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:isSwitchVisible="false"
+                app:hint="Coming Soon"
+                android:visibility="gone"
+                android:alpha="0.8"
+                app:text="Automatic Video Recording" />
+
+            <View style="@style/DelimiterStyle"
+                android:visibility="gone"
+                />
+            <com.dt.auto.background.video.recorder.app_ui.activity.settings.setting_custom_views.SettingsButton
+                android:id="@+id/schedule_recording_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:isSwitchVisible="false"
+                app:hint="Coming Soon"
+                android:visibility="gone"
+
+                android:alpha="0.8"
+                app:text="Schedule Video Recording" />
+
+            <View style="@style/DelimiterStyle"
+                android:visibility="gone"
+                />
+
+            <com.dt.auto.background.video.recorder.app_ui.activity.settings.setting_custom_views.SettingsButton
+                android:id="@+id/preview_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hint="@string/medium"
+                android:visibility="visible"
+                app:isSwitchVisible="false"
+                app:text="@string/preview_size" />
+
+            <View style="@style/DelimiterStyle"
+                android:visibility="visible"
+                />
+
+            <com.dt.auto.background.video.recorder.app_ui.activity.settings.setting_custom_views.SettingsButton
+                android:id="@+id/recording_duration_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:hint="@string/unlimited"
+                app:isSwitchVisible="false"
+                app:text="@string/recording_duration" />
+
+
+
+            <TextView
+                style="@style/SettingsGroupTitleTextViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/default_margin"
+                android:layout_marginTop="@dimen/default_margin"
+                android:visibility="gone"
+                android:layout_marginBottom="@dimen/default_margin_small"
+                android:text="@string/general" />
+
+            <View style="@style/DelimiterStyle"
+                android:visibility="visible"
+                />
+
+            <com.dt.auto.background.video.recorder.app_ui.activity.settings.setting_custom_views.SettingsButton
+                android:id="@+id/schedule_video_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:isSwitchVisible="false"
+                android:visibility="gone"
+                app:hint="Set Time for automatically record"
+                app:text="Scheduling Video" />
+
+
+
+            <View style="@style/DelimiterStyle"
+                android:visibility="gone"
+                />
+
+            <com.dt.auto.background.video.recorder.app_ui.activity.settings.setting_custom_views.SettingsButton
+                android:id="@+id/rate_us_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:isSwitchVisible="false"
+                android:visibility="gone"
+                app:text="@string/rate_us" />
+
+            <View style="@style/DelimiterStyle"
+                android:visibility="gone"
+                />
+
+            <com.dt.auto.background.video.recorder.app_ui.activity.settings.setting_custom_views.SettingsButton
+                android:id="@+id/share_us_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:isSwitchVisible="false"
+                android:visibility="gone"
+                app:text="@string/share" />
+
+            <View style="@style/DelimiterStyle"
+                android:visibility="gone"
+                />
+
+            <com.dt.auto.background.video.recorder.app_ui.activity.settings.setting_custom_views.SettingsButton
+                android:id="@+id/privacy_policy_btn"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                app:hint="@string/hint_privacy"
+                app:isSwitchVisible="false"
+                app:text="@string/apps_privacy_policy_text" />
+
+            <View style="@style/DelimiterStyle"
+                android:visibility="gone"
+                />
+
+            <com.dt.auto.background.video.recorder.app_ui.activity.settings.setting_custom_views.SettingsButton
+                android:id="@+id/perm_check_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:hint="@string/perms"
+                app:isSwitchVisible="false"
+                app:text="@string/permi_check" />
+
+            <View style="@style/DelimiterStyle" />
+
+            <com.dt.auto.background.video.recorder.app_ui.activity.settings.setting_custom_views.SettingsButton
+                android:id="@+id/version_check_button"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                app:hint="1.0.0"
+                app:isSwitchVisible="false"
+                app:text="@string/version" />
+
+
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color">
+
+
+    <TextView
+        android:id="@+id/text_view_appearance_title"
+        style="@style/DefaultTextViewStyle"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/default_margin"
+        android:layout_marginTop="@dimen/default_margin"
+        android:layout_marginBottom="@dimen/default_margin_small"
+        android:text="@string/permission_required" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+
+        <TextView
+            style="@style/DefaultTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/default_margin"
+            android:layout_marginTop="@dimen/default_margin"
+            android:layout_marginBottom="@dimen/default_margin_small"
+            android:text="@string/storage_access" />
+
+        <TextView
+            style="@style/SmallTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/default_margin"
+            android:layout_marginTop="@dimen/default_margin_small"
+            android:layout_marginBottom="@dimen/default_margin_small"
+            android:text="Required your permission to access device storage and get an intruder selfie." />
+
+
+    <View style="@style/DelimiterStyle"
+        android:visibility="visible"
+
+        android:layout_marginHorizontal="@dimen/default_margin"
+        android:layout_marginTop="@dimen/default_margin_small"
+
+        />
+
+        <TextView
+            style="@style/DefaultTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/default_margin"
+            android:layout_marginTop="@dimen/default_margin"
+            android:layout_marginBottom="@dimen/default_margin_small"
+            android:text="@string/camera_access" />
+
+        <TextView
+            style="@style/SmallTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/default_margin"
+            android:layout_marginTop="@dimen/default_margin_small"
+            android:layout_marginBottom="@dimen/default_margin_small"
+            android:text="Required your permission to access device camera to capture video." />
+
+
+        <View style="@style/DelimiterStyle"
+            android:visibility="visible"
+
+            android:layout_marginHorizontal="@dimen/default_margin"
+            android:layout_marginTop="@dimen/default_margin_small"
+
+            />
+
+
+        <TextView
+            style="@style/DefaultTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/default_margin"
+            android:layout_marginTop="@dimen/default_margin"
+            android:layout_marginBottom="@dimen/default_margin_small"
+            android:text="@string/required_audio" />
+
+        <TextView
+            style="@style/SmallTextViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/default_margin"
+            android:layout_marginTop="@dimen/default_margin_small"
+            android:layout_marginBottom="@dimen/default_margin_small"
+            android:text="This permission is required in order to record audio while recording background video."/>
+
+        <View style="@style/DelimiterStyle"
+            android:visibility="visible"
+
+            android:layout_marginHorizontal="@dimen/default_margin"
+            android:layout_marginTop="@dimen/default_margin_small"
+
+            />
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnContinue"
+        android:layout_width="240dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/text_border"
+        android:fontFamily="@font/poppins_medium"
+        android:paddingTop="8dp"
+        android:text="Get Started"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        app:backgroundTint="@null" />
+</RelativeLayout>

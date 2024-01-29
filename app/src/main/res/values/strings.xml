@@ -1,0 +1,213 @@
+<resources>
+    <string name="app_name">Background Video Recorder</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="privacy_policy">https://paralleltech169056189.wordpress.com/</string>
+
+
+    <!--    Applovin Ads-->
+    <string name="applovin_sdk_key">cHhLRNtwJxTcCAT5y3ZXkHeu3T9hwuTIneZLWhsJyEDgNS2p1FwvPQLUiVVabvKEKPTlMlT-N99qimgqSZ5rIr</string>
+
+    <!--
+    AppLovinIds Here
+    -->
+    <string name="native_app_lovin_id">56c6e4dce6b97632</string>
+    <string name="app_lovin_inters_id">2862fcd644f003da</string>
+    <string name="app_lovin_banner_id">3e662fabd4a31a5a</string>
+
+
+    <!--    Admob Test Ads-->
+  <!--  <string name="Admob_App_Id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="admob_interstitial_ad">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="admob_native_ad">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="admob_banner_ad">ca-app-pub-3940256099942544/63009781</string>-->
+
+    <!--        Admob original Ads-->
+    <string name="Admob_App_Id">ca-app-pub-7398630592274943~3423814422</string>
+    <string name="admob_interstitial_ad">ca-app-pub-7398630592274943/6783640788</string>
+    <string name="admob_native_ad">ca-app-pub-7398630592274943/9797651081</string>
+    <string name="admob_banner_ad">ca-app-pub-7398630592274943/4549193831</string>
+
+    <!--  Facebook Live Ads-->
+    <string name="fb_App_Id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="fb_interstitial_ad">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="fb_native_ad">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="fb_banner_ad">ca-app-pub-3940256099942544/63009781</string>
+
+    <!--Facebook Test Ads-->
+    <!-- <string name="fb_App_Id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="fb_interstitial_ad">1387512678377513_1387514138377367</string>
+    <string name="fb_native_ad">1387512678377513_1387514645043983</string>
+    <string name="fb_banner_ad">1387512678377513_1387513665044081</string>-->
+
+
+    <string name="rationale_title">Permission required</string>
+    <string name="rationale_message">In order to serve you better we need permission these permissions else the feature will not work properly</string>
+    <string name="require_permissions">If you reject permission, you will not be able to use features of Camera, Storage and Recording</string>
+    <string name="perms_denied">Permission denied</string>
+    <string name="settings_perms">Settings</string>
+
+
+    <string name="ad_loading">Ad loading</string>
+    <string name="rate_us">Rate Us</string>
+    <string name="share">Share Us</string>
+    <string name="share_using">Share using</string>
+    <string name="loading_ad">Loading Ad!</string>
+    <string name="saved_success">Saved Successfully</string>
+    <string name="try_again_in_moment">Try again in a moment</string>
+    <string name="go_pro_version">Purchase Pro Version to go add free</string>
+
+
+    <string name="inAppLife" translatable="false">by using this app, you agree to terms and condition and acknowledge the Privacy and policy. You will start an Life Time subscription plan and be charged $14.99 at the end of your trial unless you cancel it before it ends. Upon purchasing a subscription, any unusual potion of a free trial period will be forfeited. Your subscription will auto-renew and you will be billed %14.99 after lifetime until you cancel by turning off auto-renewal before the end of the then-current subscription.</string>
+    <string name="inAppMonth3" translatable="false">by using this app, you agree to terms and condition and acknowledge the Privacy and policy. You will start an 3 Months subscription plan and be charged $9.99 at the end of your trial unless you cancel it before it ends. Upon purchasing a subscription, any unusual potion of a free trial period will be forfeited. Your subscription will auto-renew and you will be billed %9.99 after 3 Months until you cancel by turning off auto-renewal before the end of the then-current subscription.</string>
+    <string name="inAppWeek4" translatable="false">by using this app, you agree to terms and condition and acknowledge the Privacy and policy. You will start an 4 Weeks subscription plan and be charged $4.49 at the end of your trial unless you cancel it before it ends. Upon purchasing a subscription, any unusual potion of a free trial period will be forfeited. Your subscription will auto-renew and you will be billed %4.49 after 4 Weeks until you cancel by turning off auto-renewal before the end of the then-current subscription.</string>
+    <string name="inAppWeek1" translatable="false">by using this app, you agree to terms and condition and acknowledge the Privacy and policy. You will start an 1 Week subscription plan and be charged $2.49 at the end of your trial unless you cancel it before it ends. Upon purchasing a subscription, any unusual potion of a free trial period will be forfeited. Your subscription will auto-renew and you will be billed %2.49 after 1 Weeks until you cancel by turning off auto-renewal before the end of the then-current subscription.</string>
+
+
+    <string name="delete_dialog_text">Are you sure you want to \n delete these files?</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="recording_limit_sample">004</string>
+    <string name="back">Back</string>
+    <string name="security_question">Security Question</string>
+    <string name="your_passcode_will_be">Your passcode will be</string>
+    <string name="feedback_title">Thank you for staying with us!</string>
+    <string name="feedback_description_dialog">We worked very hard to make it serene for you.\n if you like our app please share your views with us.</string>
+    <string name="password_status_description">Your Credentials have been saved</string>
+    <string name="submit">Submit</string>
+    <string name="question_sample">What was your first pet name?</string>
+    <string name="splash_txt">BACKGROUND\nVIDEO RECORDER</string>
+    <string name="welcome_to_background_video_recorder">Welcome to Background video recorder</string>
+    <string name="your_privacy_matters">Your Privacy Matters</string>
+    <string name="privacy_description">Don\'t worry, we will save your videos only in the app\'s gallery from where you can view, share and delete your recorded videos.</string>
+    <string name="set_password_description">You can set a password from here and from the settings panel to prevent others from using this application</string>
+    <string name="set_password">Set Password</string>
+    <string name="not_now">Not Now</string>
+    <string name="saving_description">We are saving your video!</string>
+    <string name="front_camera">Front Camera</string>
+    <string name="back_camera">Back Camera</string>
+    <string name="lock_your_app_when_exit">Lock your app when exit</string>
+    <string name="select_video_quality">Select video Quality</string>
+    <string name="app_lock">App Lock</string>
+    <string name="video_quality">Video Quality</string>
+    <string name="mediaplayer">Media Player</string>
+    <string name="settings">Settings</string>
+    <string name="record_preview">Record + Preview</string>
+    <string name="record">Record</string>
+    <string name="record_description">Press the play button to start recording the video</string>
+    <string name="exit_info">If you start the recording and Exit the App the video will be recording in background until you stop the recording</string>
+
+    <string name="rating_feedback_email">info.devterritory@gmail.com</string>
+
+
+    <string name="three_monthly_subscription">bvr_three_months_subscription_prod_id</string>
+    <string name="monthly_subscription">bvr_monthly_subscription_prod_id</string>
+    <string name="one_week_subscription">bvr_one_week_subscription_prod_id</string>
+    <string name="lifetime">bvr_life_time_purchase_prod_id</string>
+
+    <string name="reset_pin">Reset pin</string>
+    <string name="set_new_pin">Set New Pin</string>
+    <string name="save_pin">Confirm</string>
+    <string name="lock_app">App Lock Setting</string>
+    <string name="enable_lock">Enable Lock</string>
+    <string name="do_you_want">Do you want to exit?</string>
+    <string name="exit__">Exit</string>
+    <string name="disable_lock">Disable Lock</string>
+    <string name="lock_disabled">Lock Disabled</string>
+    <string name="allow_camera">Please allow camera permissions in order to work</string>
+
+    <string name="Idle">Idle</string>
+    <string name="capture">Capture</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="allow_permissions">Allow Permissions</string>
+    <string name="allow_text">Allow</string>
+    <string name="_00_00">Duration : 00:00</string>
+    <string name="deleted_successfully">Deleted Successfully</string>
+    <string name="error_deletion">Error Deleting Media</string>
+    <string name="enable_permissions">Can\'t read files without permission.</string>
+    <string name="sharing_video">Share</string>
+    <string name="no_videos_found">No Videos Found</string>
+    <string name="show_records">Show Records</string>
+    <string name="error_sharing_video">Error sharing video</string>
+    <string name="settings_app_lock">App Lock</string>
+    <string name="settings_camera">Camera Settings</string>
+    <string name="video_recording_settings">Background Video Recorder Setup</string>
+    <string name="video_camera">Video Camera</string>
+    <string name="preview_size">Preview Size</string>
+    <string name="medium">Medium</string>
+    <string name="small">Small</string>
+    <string name="large">Large</string>
+    <string name="recording_duration">Recording Duration</string>
+    <string name="unlimited">Unlimited</string>
+    <string name="permi_check">Permissions Check</string>
+    <string name="camera_selection">Select Camera</string>
+    <string name="cancel_btn">Cancel</string>
+    <string name="ok_btn">OK</string>
+    <string name="preview_show_hide">Preview</string>
+    <string name="perms">1. Read/Write\n2. Camera\n3. Action Overlay\n4. Foreground Service\n5. System Alert Window\n6. Record Video\n7. Record Audio\n8. Internet\n9. Network State\n\nThese permissions needed for the app to work properly.</string>
+    <string name="agree">Agree</string>
+    <string name="disagree">Disagree</string>
+    <string name="privacy_terms_conditions">In Order to continue with the app you\'ll have to Accept the privacy policy as well as terms and condtions.</string>
+    <string name="accept">Accept</string>
+    <string name="dismiss">Dismiss</string>
+    <string name="no_internet_available">Check your Internet Connection</string>
+    <string name="apps_privacy_policy_text">Privacy Policy</string>
+    <string name="apps_privacy_policy">https://lovizamobileapps.blogspot.com/2022/06/privacy-policy.html</string>
+    <string name="hint_privacy"><![CDATA[Privacy policy & Terms and Conditions]]></string>
+    <string name="general">General</string>
+    <string name="version">Version</string>
+    <string name="recordings">Saved Files</string>
+    <string name="i_have_read_and_accept_the_term_amp_conditions"><![CDATA[I have read and accept the Term & Conditions]]></string>
+    <string name="permissions_">Permissions</string>
+    <string name="press_again_to_exit">Please click BACK again to exit</string>
+
+    <string name="video_quality_selection">Video Quality</string>
+    <string name="resolutions_description">Resolutions supported by device will shown here</string>
+    <string name="fourk_res">4K High Definition (4KHD) - 4160p</string>
+    <string name="twok_res">Ultra High Definition (UHD) - 2160p</string>
+    <string name="full_hd_res">Full High Definition (FHD) - 1080p</string>
+    <string name="hd_res">High Definition (HD) - 720p</string>
+    <string name="sd_res">Standard Definition (SD) - 480p</string>
+    <string name="ld_res">Low Definition (LD) - 3600p</string>
+    <string name="deletion">Delete</string>
+    <string name="delete_title">Deletion?</string>
+    <string name="are_you_sure_you_want_to_delete_file">Are you sure you want to delete file?</string>
+    <string name="disabl">Enabled</string>
+    <string name="enable">Disabled</string>
+
+    <string name="video_duration">Video Duration</string>
+    <string name="_120_min">120 Min  Unlimited Time</string>
+    <string name="_60_min">60 Min</string>
+    <string name="_45_min">45 Min</string>
+    <string name="_30_min">30 Min</string>
+    <string name="_15_min">15 Min</string>
+    <string name="_10_min">10 Min</string>
+    <string name="_5_min">5 Min</string>
+    <string name="get_pro_version_for_better_performance">Get Pro Version For better performance</string>
+    <string name="shortcut">Shortcut</string>
+    <string name="forget_pin">Forget pin?</string>
+    <string name="nick_name_enter">Enter Nickname so that that you can reset pin later on</string>
+    <string name="enter_nickname">Enter Nickname</string>
+    <string name="done_pwd">Done</string>
+    <string name="name_not_matched">Name didn\'t match</string>
+    <string name="name_need_to_reset">Name is must to reset pin</string>
+    <string name="name_must">Name is must to reset pin</string>
+    <string name="write_pin_code">Write pincode first</string>
+    <string name="less_then_four">Pin can\'t be less than 4 digits</string>
+    <string name="cancel_anytime"><u>Cancel AnyTime</u></string>
+
+    <string name="simplepinlock_request_pin">Enter PIN</string>
+    <string name="simplepinlock_enter_pin1">Enter new PIN</string>
+    <string name="simplepinlock_enter_pin2">Re enter PIN</string>
+    <string name="simplepinlock_invalid_pin">Invalid PIN. Try again</string>
+    <string name="simplepinlock_pin_mismatch">PIN mismatch. Try again</string>
+    <string name="only_one_time_purchase_amp_enjoy_life">Only one time purchase
+&amp; Enjoy Life</string>
+    <string name="permission_required">Permission Required</string>
+    <string name="storage_access">Storage Access</string>
+    <string name="camera_access">Camera Access</string>
+    <string name="required_audio">Required Audio</string>
+
+</resources>

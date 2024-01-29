@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_primary_2"
+    xmlns:maxads="http://schemas.applovin.com/android/1.0"
+    tools:context=".ui.activitiy.ExitActivity">
+
+    <RelativeLayout
+        android:visibility="invisible"
+        android:background="@drawable/ad_border"
+        android:id="@+id/nativeArea"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="265dp"
+        android:elevation="2dp"
+        >
+        <TextView
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ad is loading"
+            android:textColor="@color/white"
+            android:layout_centerInParent="true"/>
+
+        <LinearLayout
+            android:id="@+id/fbAdView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="2dp"
+            android:orientation="vertical"
+            android:visibility="invisible" />
+
+        <FrameLayout
+            android:id="@+id/admobAdView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:layout_margin="2dp"
+            android:visibility="invisible" />
+
+        <com.applovin.mediation.ads.MaxAdView
+            android:id="@+id/applovinAdView"
+            android:layout_width="300dp"
+            android:layout_height="250dp"
+            android:layout_centerInParent="true"
+            android:background="#0D2E3E"
+            android:visibility="invisible"
+            maxads:adFormat="MREC"
+            maxads:adUnitId="54ebc06f6c04be99" />
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nativeArea"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:text="@string/exit_info"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/goPro"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/text1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="15sp"
+        android:background="@drawable/ad_border"
+        android:backgroundTint="#8BC34A"
+        android:text="Go Pro"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        app:backgroundTint="@null"
+
+        />
+
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:layout_marginBottom="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_gravity="center"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:src="@drawable/exit"/>
+        <TextView
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:id="@+id/text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_bold"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="30dp"
+            android:text="Are You Sure?"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <Button
+                app:backgroundTint="@null"
+                android:layout_marginEnd="15sp"
+                android:id="@+id/goBack"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:backgroundTint="#4D4D6B"
+                android:background="@drawable/ad_border"
+                android:text="Go Back"
+                android:textAllCaps="false"
+                android:textColor="#FF0303"
+
+                />
+
+            <Button
+                app:backgroundTint="@null"
+                android:layout_marginStart="15sp"
+                android:id="@+id/yes"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:backgroundTint="#4D4D6B"
+                android:background="@drawable/ad_border"
+                android:text="Yes"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+
+                />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

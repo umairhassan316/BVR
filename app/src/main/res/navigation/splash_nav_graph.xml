@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/splashOneFragment">
+    <fragment
+        android:id="@+id/splashOneFragment"
+        android:name="com.dt.auto.background.video.recorder.ui.fragment.SplashOneFragment"
+        android:label="layout_splash_one_fragment"
+        tools:layout="@layout/layout_splash_one_fragment" >
+        <action
+            android:id="@+id/action_splashOneFragment_to_privacyFragment"
+            app:destination="@id/privacyFragment" />
+        <action
+            android:id="@+id/action_splashOneFragment_to_home_nav_graph"
+            app:destination="@id/home_nav_graph" />
+    </fragment>
+    <fragment
+        android:id="@+id/privacyFragment"
+        android:name="com.dt.auto.background.video.recorder.ui.fragment.PrivacyFragment"
+        android:label="PrivacyFragment" >
+
+
+        <action
+            android:id="@+id/action_privacyFragment_to_home_nav_graph"
+            app:destination="@id/home_nav_graph" />
+    </fragment>
+    <fragment
+        android:id="@+id/askingSetPassword"
+        android:name="com.dt.auto.background.video.recorder.ui.fragment.AskingSetPassword"
+        android:label="AskingSetPassword" >
+        <action
+            android:id="@+id/action_askingSetPassword_to_setUserFragment2"
+            app:destination="@id/setUserFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/setUserFragment2"
+        android:name="com.dt.auto.background.video.recorder.ui.fragment.SetUserFragment"
+        android:label="SetUserFragment" >
+        <action
+            android:id="@+id/action_setUserFragment2_to_securityFragment"
+            app:destination="@id/securityFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/securityFragment"
+        android:name="com.dt.auto.background.video.recorder.ui.fragment.SecurityFragment"
+        android:label="SecurityFragment" >
+
+        <action
+            android:id="@+id/action_securityFragment_to_savedSuccessFragment"
+            app:destination="@id/savedSuccessFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/savedSuccessFragment"
+        android:name="com.dt.auto.background.video.recorder.ui.fragment.SavedSuccessFragment"
+        android:label="SavedSuccessFragment" />
+    <include app:graph="@navigation/home_nav_graph" />
+    <fragment
+        android:id="@+id/verifyUserFragment"
+        android:name="com.dt.auto.background.video.recorder.ui.fragment.VerifyUserFragment"
+        android:label="VerifyUserFragment" >
+        <action
+            android:id="@+id/action_verifyUserFragment_to_home_nav_graph"
+            app:destination="@id/home_nav_graph" />
+    </fragment>
+</navigation>
+
+

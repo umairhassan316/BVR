@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:maxads="http://schemas.applovin.com/android/1.0"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_color">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/bg_home"
+            android:elevation="@dimen/spacing_medium"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.75"
+            app:layout_constraintHorizontal_bias="0.0"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_percent="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toTopOf="@+id/timer_tv"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_percent="0.30"
+                app:layout_constraintStart_toStartOf="parent"
+
+                app:layout_constraintTop_toTopOf="@+id/animMovie"
+                app:layout_constraintWidth_percent="0.70">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/layout_applock"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/corner_shape_bg"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:padding="5dp"
+                            android:src="@drawable/ic_baseline_lock_72"
+                            app:tint="@color/bg_color" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:padding="5dp"
+
+                            android:text="App Lock"
+                            android:textStyle="bold"
+                            android:textColor="@color/bg_color" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_setting"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/corner_shape_bg"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:padding="5dp"
+                            android:src="@drawable/ic_settings"
+                            app:tint="@color/bg_color" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:padding="5dp"
+
+                            android:text="Setting"
+                            android:textStyle="bold"
+                            android:textColor="@color/bg_color" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/layout_saved"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginRight="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/corner_shape_bg"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:padding="5dp"
+                            android:src="@drawable/ic_baseline_video_library_72"
+                            app:tint="@color/bg_color" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:padding="5dp"
+
+                            android:text="Saved Files"
+                            android:textStyle="bold"
+                            android:textColor="@color/bg_color" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_preview"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/corner_shape_bg"
+                        android:gravity="center_horizontal"
+                        android:orientation="horizontal"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:padding="5dp"
+                            android:src="@drawable/ic_baseline_remove_red_eye_72"
+                            app:tint="@color/bg_color" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:padding="5dp"
+
+                            android:text="Preview"
+                            android:textStyle="bold"
+                            android:textColor="@color/bg_color" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/animMovie"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:src="@drawable/icon"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_percent="0.25"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_percent="0.40" />
+
+
+            <TextView
+                android:id="@+id/timer_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_bold"
+                android:text="00:00:00"
+                android:textColor="@color/bg_color"
+                android:textSize="18sp"
+                android:visibility="visible"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnShowCameraPreview" />
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/ivWavesHome"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_percent="0.15"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/animMovie"
+                app:layout_constraintWidth_percent="0.4"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/anim_waves" />
+
+            <ImageButton
+                android:id="@+id/btnShowCameraPreview"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/show_btn_png"
+                android:textAllCaps="false"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_percent="0.1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/animMovie"
+                app:layout_constraintWidth_percent="0.5" />
+
+            <ImageButton
+                android:id="@+id/btnShowCameraPreview2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:alpha="0.7"
+                android:background="@drawable/show_btn_png"
+                android:textAllCaps="false"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_percent="0.1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/animMovie"
+                app:layout_constraintWidth_percent="0.5" />
+
+            <ImageButton
+                android:id="@+id/ibShare"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="@dimen/spacing_standard"
+                android:background="?android:selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:src="@drawable/ic_baseline_share"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/btnShowCameraPreview"
+                app:tint="@color/yellow_800" />
+
+            <ImageButton
+                android:id="@+id/ibFile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/spacing_standard"
+                android:background="?android:selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:src="@drawable/videos_btn"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/btnShowCameraPreview" />
+
+            <ImageButton
+                android:id="@+id/iv_pro"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginEnd="32dp"
+                android:background="?android:selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:elevation="@dimen/spacing_standard"
+                android:focusable="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/pro"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/btnShowCameraPreview" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ImageButton
+            android:id="@+id/ibFeedBack"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/negative_spacing_for_ib"
+            android:background="?android:selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:elevation="@dimen/spacing_standard"
+            android:focusable="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_feedback"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toStartOf="@+id/ibPlay"
+            app:layout_constraintHeight_percent=".12"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout3"
+            app:layout_constraintWidth_percent=".21" />
+
+
+        <ImageButton
+            android:id="@+id/ibSettingHome"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/negative_spacing_for_ib"
+            android:background="?android:selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:elevation="@dimen/spacing_standard"
+            android:focusable="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_setting"
+            android:visibility="invisible"
+            app:layout_constraintHeight_percent=".12"
+            app:layout_constraintStart_toEndOf="@+id/ibPlay"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout3"
+            app:layout_constraintWidth_percent=".21" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animPlay"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:elevation="@dimen/spacing_standard"
+            android:scaleType="fitCenter"
+            app:layout_constraintBottom_toBottomOf="@+id/ibPlay"
+            app:layout_constraintEnd_toEndOf="@+id/ibPlay"
+            app:layout_constraintStart_toStartOf="@+id/ibPlay"
+            app:layout_constraintTop_toTopOf="@+id/ibPlay"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/anim_play" />
+
+
+        <ImageButton
+            android:id="@+id/ibPlay"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="?android:selectableItemBackgroundBorderless"
+            android:clickable="false"
+            android:focusable="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/record_btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.17"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout3"
+            app:layout_constraintWidth_percent=".30" />
+
+        <ImageButton
+            android:id="@+id/stop"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="?android:selectableItemBackgroundBorderless"
+            android:clickable="false"
+            android:focusable="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_start"
+            android:visibility="invisible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_percent="0.17"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout3"
+            app:layout_constraintWidth_percent=".30" />
+
+        <TextView
+            android:id="@+id/tvPlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-5dp"
+            android:text="@string/record"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="@color/blue_50"
+            app:layout_constraintEnd_toEndOf="@+id/animPlay"
+            app:layout_constraintStart_toStartOf="@+id/animPlay"
+            app:layout_constraintTop_toBottomOf="@+id/animPlay" />
+
+        <TextView
+            android:id="@+id/recordDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="@string/record_description"
+            android:textColor="#D4D4D4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/animPlay" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <FrameLayout
+        android:visibility="gone"
+        android:id="@+id/native_container_holder"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/native_height"
+        android:layout_margin="4dp"
+        android:background="@drawable/round_corner_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <FrameLayout
+            android:id="@+id/native_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp" />
+
+        <TextView
+            android:id="@+id/loading_tv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/transparent"
+            android:gravity="center"
+            android:text="@string/ad_loading"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmer_view_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:background="@drawable/round_corner_shimmer_bg" />
+    </FrameLayout>
+    <ImageButton
+        android:visibility="gone"
+        android:id="@+id/ibSettingHome2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/native_container_holder"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="20dp"
+        android:background="?android:selectableItemBackgroundBorderless"
+        android:clickable="true"
+        android:elevation="@dimen/spacing_standard"
+        android:focusable="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_settings" />
+
+
+
+
+</RelativeLayout>

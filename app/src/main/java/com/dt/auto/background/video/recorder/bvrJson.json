@@ -1,0 +1,14 @@
+{
+  "interstitialAdId": "",
+  "appOpenAdId": "",
+  "bannerAdId": "",
+  "nativeAdId": "",
+  "startInterstitialEitherAdmobOrAppLovinInSplash": 1,
+  "startInterstitialEitherAdmobOrAppLovinInDashboard": 1,
+  "startNativeEitherAdmobOrAppLovinInSplash": 1,
+  "startNativeEitherAdmobOrAppLovinInQualitySelection": 1,
+  "startNativeEitherAdmobOrAppLovinExitScreen": 1,
+  "startNativeEitherAdmobOrAppLovinInSettingsScreen": 1,
+  "startBannerEitherAdmobOrAppLovinInDashboard": 1,
+  "startBannerEitherAdmobOrAppLovinInVideosListScreen": 1
+}

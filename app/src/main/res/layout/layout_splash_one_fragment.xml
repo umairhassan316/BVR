@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/bg_color">
+
+    <LinearLayout
+        android:layout_above="@+id/txtGetPro"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:visibility="invisible"
+            android:id="@+id/native_container_holder"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_margin="4dp"
+            android:background="@drawable/round_corner_bg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <FrameLayout
+                android:id="@+id/native_container"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/native_height"
+                android:layout_gravity="center"
+                android:layout_margin="3dp" />
+
+            <TextView
+                android:id="@+id/loading_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparent"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="@string/ad_loading"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:id="@+id/shimmer_view_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="4dp"
+                android:background="@drawable/round_corner_shimmer_bg" />
+        </FrameLayout>
+
+
+        <ImageView
+            android:layout_marginTop="32dp"
+            android:layout_gravity="center"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/icon_new"/>
+
+
+        <TextView
+            android:layout_marginTop="12dp"
+            android:textAlignment="center"
+            android:id="@+id/tvHiFellas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/splash_txt"
+            android:textSize="24sp"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/txtGetPro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/ab"
+        android:layout_marginStart="72dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/round_corner_bg_splash"
+        android:padding="6dp"
+        android:text="@string/get_pro_version_for_better_performance"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:id="@+id/ab"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:visibility="gone"
+            android:layout_margin="20dp"
+            android:id="@+id/moveToActivity"
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/text_border"
+            android:fontFamily="@font/poppins_medium"
+            android:paddingTop="8dp"
+            android:text="Continue"
+            android:textAlignment="center"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            app:backgroundTint="@null" />
+
+
+        <pl.droidsonroids.gif.GifImageView
+            android:id="@+id/progress"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:elevation="3dp"
+            android:src="@drawable/ads_gif" />
+
+
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>

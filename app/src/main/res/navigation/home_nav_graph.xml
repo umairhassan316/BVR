@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/home_nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.dt.auto.background.video.recorder.ui.fragment.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_settingsFragment"
+            app:destination="@id/settingsFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_cameraPreviewFragment"
+            app:destination="@id/cameraPreviewFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_feedbackFragment"
+            app:destination="@id/feedbackFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_filesFragment"
+            app:destination="@id/filesFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_layoutEmpty"
+            app:destination="@id/layoutEmpty" />
+        <action
+            android:id="@+id/action_homeFragment_to_layoutEmpty2"
+            app:destination="@id/layoutEmpty" />
+    </fragment>
+    <fragment
+        android:id="@+id/settingsFragment"
+        android:name="com.dt.auto.background.video.recorder.ui.fragment.SettingsFragment"
+        android:label="SettingsFragment" >
+
+
+    </fragment>
+    <fragment
+        android:id="@+id/cameraPreviewFragment"
+        android:name="com.dt.auto.background.video.recorder.ui.fragment.CameraPreviewFragment"
+        android:label="CameraPreviewFragment" >
+        <action
+            android:id="@+id/action_cameraPreviewFragment_to_filesFragment"
+            app:destination="@id/filesFragment"
+            app:popUpTo="@id/filesFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/feedbackFragment"
+        android:name="com.dt.auto.background.video.recorder.ui.fragment.FeedbackFragment"
+        android:label="FeedbackFragment" />
+    <fragment
+        android:id="@+id/filesFragment"
+        android:name="com.dt.auto.background.video.recorder.ui.fragment.FilesFragment"
+        android:label="FilesFragment" >
+        <action
+            android:id="@+id/action_filesFragment_to_favFilesFragment"
+            app:destination="@id/favFilesFragment" />
+        <action
+            android:id="@+id/action_filesFragment_to_exoplayerFragment"
+            app:destination="@id/exoplayerFragment" />
+        <action
+            android:id="@+id/action_filesFragment_to_layoutEmpty"
+            app:destination="@id/layoutEmpty" />
+    </fragment>
+    <fragment
+        android:id="@+id/favFilesFragment"
+        android:name="com.dt.auto.background.video.recorder.ui.fragment.FavFilesFragment"
+        android:label="FavFilesFragment" >
+        <action
+            android:id="@+id/action_favFilesFragment_to_exoplayerFragment"
+            app:destination="@id/exoplayerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/exoplayerFragment"
+        android:name="com.dt.auto.background.video.recorder.ui.fragment.ExoplayerFragment"
+        android:label="ExoplayerFragment" />
+    <fragment
+        android:id="@+id/setUserFragment"
+        android:name="com.dt.auto.background.video.recorder.ui.fragment.SetUserFragment"
+        android:label="SetUserFragment" >
+        <action
+            android:id="@+id/action_setUserFragment_to_securityFragment2"
+            app:destination="@id/securityFragment2" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/securityFragment2"
+        android:name="com.dt.auto.background.video.recorder.ui.fragment.SecurityFragment"
+        android:label="SecurityFragment" >
+        <action
+            android:id="@+id/action_securityFragment2_to_savedSuccessFragment2"
+            app:destination="@id/savedSuccessFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/savedSuccessFragment2"
+        android:name="com.dt.auto.background.video.recorder.ui.fragment.SavedSuccessFragment"
+        android:label="SavedSuccessFragment" >
+
+    </fragment>
+    <fragment
+        android:id="@+id/layoutEmpty"
+        android:name="com.dt.auto.background.video.recorder.ui.fragment.LayoutEmpty"
+        android:label="LayoutEmpty" >
+        <action
+            android:id="@+id/action_layoutEmpty_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/homeFragment"/>
+    </fragment>
+</navigation>
