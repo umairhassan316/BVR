@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <color name="app_color">#181822</color>
+    <color name="app_color_primary">#FF6A13</color>
 
     <!--  Colors From Xd file  -->
+
+    <color name="bg_color">@color/app_color</color>
+    <color name="bg_button">@color/app_color_primary</color>
+
 
     <color name="light_grey_screen_bgnd">#F3F3F3</color>
     <color name="color_primary">#FFBF00</color>
@@ -321,10 +327,6 @@
     <color name="grey_1000">#1a1a1a</color>
     <color name="fav_files_bgnd">#FF0000</color>
 
-
-
-    <color name="bg_color">@color/orange_900</color>
-    <color name="bg_button">@color/orange_200</color>
 
     <color name="colorYellow">#FFE000</color>
 

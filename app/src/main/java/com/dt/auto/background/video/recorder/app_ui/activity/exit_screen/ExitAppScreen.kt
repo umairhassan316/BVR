@@ -52,7 +52,7 @@ class ExitAppScreen : BaseActivity() {
         setUpRating()
 
         //showInterstitial()
-        showNativeAds()
+        //showNativeAds()
 //        showNativeEitherAdmobOrAppLovinInExitScreen()
     }
 
