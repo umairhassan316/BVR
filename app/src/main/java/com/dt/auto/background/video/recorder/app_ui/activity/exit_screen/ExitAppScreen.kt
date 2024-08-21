@@ -11,16 +11,16 @@ import android.widget.RatingBar
 import android.widget.RatingBar.OnRatingBarChangeListener
 import android.widget.Toast
 import com.appizona.yehiahd.fastsave.FastSave
-import com.google.android.play.core.review.ReviewInfo
-import com.google.android.play.core.review.ReviewManager
-import com.google.android.play.core.review.ReviewManagerFactory
-import com.google.android.play.core.tasks.Task
 import com.dt.auto.background.video.recorder.BuildConfig
 import com.dt.auto.background.video.recorder.R
 import com.dt.auto.background.video.recorder.base.BaseActivity
 import com.dt.auto.background.video.recorder.databinding.ActivityExitAppLayoutBinding
 import com.dt.auto.background.video.recorder.helpers.utils.setOnClickListenerCoolDown
 import com.dt.auto.background.video.recorder.helpers.utils.viewBinding
+import com.google.android.gms.tasks.Task
+import com.google.android.play.core.review.ReviewInfo
+import com.google.android.play.core.review.ReviewManager
+import com.google.android.play.core.review.ReviewManagerFactory
 
 
 class ExitAppScreen : BaseActivity() {
@@ -135,7 +135,7 @@ class ExitAppScreen : BaseActivity() {
                 // We can get the ReviewInfo object
                 val reviewInfo = task.result
                 val flow: Task<Void?> =
-                    reviewManager?.launchReviewFlow(this, reviewInfo) as Task<Void?>
+                    reviewInfo?.let { reviewManager?.launchReviewFlow(this, it) } as Task<Void?>
                 flow.addOnCompleteListener { task1: Task<Void?>? -> }
             } else {
 

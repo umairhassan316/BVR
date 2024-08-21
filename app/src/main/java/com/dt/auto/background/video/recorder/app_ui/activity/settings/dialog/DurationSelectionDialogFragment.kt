@@ -138,7 +138,7 @@ class DurationSelectionDialogFragment : DialogFragment() {
 
                 }
                 view.findViewById<ImageView>(R.id.pro_iv) -> {
-                    startActivity(Intent(requireActivity(), InAppScreen::class.java))
+                    //startActivity(Intent(requireActivity(), InAppScreen::class.java))
                     dialog.dismiss()
                 }
             }
@@ -158,14 +158,14 @@ class DurationSelectionDialogFragment : DialogFragment() {
 
         view.findViewById<ImageView>(R.id.pro_iv).setOnClickListener {
             if (!isPurchase) {
-                startActivity(Intent(requireActivity(), InAppScreen::class.java))
+                //startActivity(Intent(requireActivity(), InAppScreen::class.java))
                 dialog.dismiss()
             }
         }
 
         view.findViewById<TextView>(R.id.unlimited_time).setOnClickListenerCoolDown {
             if (!isPurchase) {
-                startActivity(Intent(requireActivity(), InAppScreen::class.java))
+                //startActivity(Intent(requireActivity(), InAppScreen::class.java))
                 dialog.dismiss()
             } else {
                 view.findViewById<TextView>(R.id.tv_unlimitedtime).visibility= View.VISIBLE

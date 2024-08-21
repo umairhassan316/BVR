@@ -32,8 +32,6 @@ import kotlinx.coroutines.launch
 @AndroidEntryPoint
 class InAppScreen : BaseActivity() {
 
-
-
     private val binding by viewBinding(ActivityPurchaseBinding::inflate)
 
 
@@ -116,9 +114,9 @@ class InAppScreen : BaseActivity() {
                 if (intent.getBooleanExtra(
                         "MoveFromSplash",
                         false) && checkPermission()) {
-                    startActivity(Intent(this@InAppScreen, PermissionActivity::class.java))
+                    //startActivity(Intent(this@InAppScreen, PermissionActivity::class.java))
                 } else
-                    startActivity(Intent(this@InAppScreen, DashboardActivity::class.java))
+                    //startActivity(Intent(this@InAppScreen, DashboardActivity::class.java))
                 finish()
             }
         }

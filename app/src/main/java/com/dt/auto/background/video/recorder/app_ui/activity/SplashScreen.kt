@@ -64,7 +64,7 @@ class SplashScreen : BaseActivity() {
 
 
         lifecycleScope.launchWhenCreated {
-            delay(7000)
+            delay(4000)
             binding.progress.gone()
             binding.moveToActivity.visible()
         }
@@ -73,13 +73,14 @@ class SplashScreen : BaseActivity() {
 
             lifecycleScope.launch {
                 if(!settings.isPinEnabled) {
-                  /*  if (hasInternetConnection(this@SplashScreen) && !isPurchase) {
+                   /* if (hasInternetConnection(this@SplashScreen) && !isPurchase) {
                         startActivity(Intent(this@SplashScreen, InAppScreen::class.java)
                             .putExtra(MoveFromSplash,true))
                         //showInterstitialSplash()
-                    }else {*/
+                    }else {
                         startActivity(Intent(this@SplashScreen, DashboardActivity::class.java))
-                    //}
+                    }*/
+                    startActivity(Intent(this@SplashScreen, DashboardActivity::class.java))
                     finish()
                 }
                 else{

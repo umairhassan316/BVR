@@ -39,25 +39,28 @@ class VideoQualitySelectionActivity : BaseActivity(),
     VideoQualitySelectionListAdapter.OnItemClickListener {
 
     override fun setOnItemPlayClickListener(position: Int, item: CameraCapabilityDataClass) {
-        when {
+        /*when {
             item.quality == getString(R.string.fourk_res) && !item.isProAvailable -> {
-                startActivity(Intent(this@VideoQualitySelectionActivity, InAppScreen::class.java))
+                //startActivity(Intent(this@VideoQualitySelectionActivity, InAppScreen::class.java))
             }
             item.quality == getString(R.string.twok_res) && !item.isProAvailable -> {
-                startActivity(Intent(this@VideoQualitySelectionActivity, InAppScreen::class.java))
+               // startActivity(Intent(this@VideoQualitySelectionActivity, InAppScreen::class.java))
             }
             item.quality == getString(R.string.full_hd_res) && !item.isProAvailable -> {
-                startActivity(Intent(this@VideoQualitySelectionActivity, InAppScreen::class.java))
+               // startActivity(Intent(this@VideoQualitySelectionActivity, InAppScreen::class.java))
             }
             item.quality == getString(R.string.hd_res) && !item.isProAvailable -> {
-                startActivity(Intent(this@VideoQualitySelectionActivity, InAppScreen::class.java))
+               // startActivity(Intent(this@VideoQualitySelectionActivity, InAppScreen::class.java))
             }
             else -> {
                 settings.videoQualitySelected = position
                 DEFAULT_QUALITY_IDX = settings.videoQualitySelected
                 super.onBackPressed()
             }
-        }
+        }*/
+        settings.videoQualitySelected = position
+        DEFAULT_QUALITY_IDX = settings.videoQualitySelected
+        super.onBackPressed()
 
 
     }

@@ -159,7 +159,7 @@ class DashboardActivity : BaseActivity() ,OverlayDialogFragment.Listener{
 
 
         binding.ivPro.setOnClickListenerCoolDown {
-           // startActivity(Intent(this@DashboardActivity, InAppScreen::class.java))
+            startActivity(Intent(this@DashboardActivity, InAppScreen::class.java))
         }
 
 

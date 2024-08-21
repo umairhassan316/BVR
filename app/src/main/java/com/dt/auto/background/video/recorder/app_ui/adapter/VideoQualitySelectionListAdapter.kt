@@ -52,16 +52,16 @@ class VideoQualitySelectionListAdapter(private val categoriesAfterChipsAdapterOn
 
                     when {
                         recordingItems.quality == context.getString(R.string.fourk_res) && !recordingItems.isProAvailable -> {
-                            binding.proIv.visible()
+                            //binding.proIv.visible()
                         }
                         recordingItems.quality == context.getString(R.string.twok_res) && !recordingItems.isProAvailable -> {
-                            binding.proIv.visible()
+                            //binding.proIv.visible()
                         }
                         recordingItems.quality == context.getString(R.string.full_hd_res) && !recordingItems.isProAvailable -> {
-                            binding.proIv.visible()
+                            //binding.proIv.visible()
                         }
                         recordingItems.quality == context.getString(R.string.hd_res) && !recordingItems.isProAvailable -> {
-                            binding.proIv.visible()
+                            //binding.proIv.visible()
                         }
                         recordingItems.quality == context.getString(R.string.sd_res) -> {
                             binding.proIv.invisible()
